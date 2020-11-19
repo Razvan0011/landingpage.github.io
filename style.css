@@ -1,0 +1,164 @@
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(248, 244, 236);
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#header{
+    background-color:  rgb(248, 244, 236);
+    display: flex; 
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+#header-img{
+    max-height: 160px;
+    object-fit: contain;
+}
+#nav-bar{
+    width: 500px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    
+}
+#nav-bar ul{
+    width: 55vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    list-style-type: disc;   
+}
+#nav-bar li{
+    display: inline;
+}
+#nav-bar a{
+    text-decoration: none;
+    color: black; 
+}
+.logo{
+    display: block;
+    
+}
+
+#form{
+    max-width: 500px;
+    padding: 20px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#form h1{
+    text-align: center;
+}
+#email{
+    align-self: center;
+    padding: 5px;
+    margin: 10px;
+    width: 100%;
+    max-width: 275px;
+}
+#submit{
+    background-color: rgb(231, 192, 19);
+    padding: 5px;
+    width: 100%;
+    max-width: 200px;
+    align-self: center;
+    font-weight: 900;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 2px 2px grey;
+}
+
+#features{
+    padding: 25px;
+    margin: 20px;
+    text-align: left;
+    margin-top: 0px;
+}
+#features p{
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+#videodiv{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pricing{
+    max-width: 950px;
+    width: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#pricing div{
+    text-align: center;
+    border: 1px solid grey;
+    padding: 3rem;
+    padding-top: 0px;
+    padding-bottom: 25px;
+    border-radius: 3%;
+}
+
+#pricing h3{
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+#pricing li{
+    list-style: none;
+    text-align: center;
+    padding: 0.2rem;
+
+}
+
+#select{
+    background-color: rgb(231, 192, 19);
+    padding: 5px;
+    width: 100%;
+    max-width: 200px;
+    align-self: center;
+    font-weight: 900;
+    font-size: 1rem;
+    border: none;
+    margin-top: 20px;
+}
+
+@media (max-width: 752px){
+    #pricing{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: calc(100% / 3);
+        margin: 10px;
+        /* border: 1px solid #000; */
+        border-radius: 3px;
+    }
+    #pricing div{
+        width: 90%;
+        margin-bottom: 1rem;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 180px;
+        max-width: 180px;
+    } 
+    #select{
+        max-width: 90%;
+        
+    }
+}
